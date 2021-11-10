@@ -1,9 +1,40 @@
 <!DOCTYPE html>
 <html>
     <head>
-    <title>Bus Mall</title>
+        <link rel="stylesheet" href="style.css">
+<title>
+    Bus Mall
+</title>
     </head>
     <body>
-    
+        <header>
+            <h1>Bus Mall Vote</h1>
+        </header>
+        <main>
+<p>
+    Click on your favorite picture!
+</p>
+<p>
+    For every one click is a vote on an image. You must vote a total of 25 times. 
+</p>
+<section id="pictures">
+        <img id="left-img" src="img/bag.jpeg" alt="baby">
+        <img id="middle-img" src="img-banana.jpeg">
+        <img id="right-img" src="img/bathroom.jpeg" alt="Chair">
+        <h2 id="left-name">Baby Maid</h2>
+        <h2 id="middle-name"></h2>
+        <h2 id="right-name">Chair</h2>
+
+</section>
+<section id="results" hidden>
+    <ul id="results-list"></ul>
+    <canvas id="results-chart" width="500" height="500"></canvas> 
+</section>
+        </main>
+        <footer>
+
+        </footer>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0/dist/Chart.min.js"></script>
+    <script src="app.js"></script>
 </html>
