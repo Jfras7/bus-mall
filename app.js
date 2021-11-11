@@ -39,13 +39,13 @@ function selectItems() {
 
     do {
         Stats.left = randomImage();   
-    } while (Stats.left === oldLeft || Stats.left === oldRight || Stats.left === oldMiddle)
+    } while (Stats.left === oldLeft || Stats.left === oldRight || Stats.left === oldMiddle || Stats.left === Stats.right || Stats.left === Stats.middle) 
     do {
         Stats.right = randomImage();   
-    } while (Stats.right === oldLeft || Stats.right === oldRight || Stats.right === oldMiddle)
+    } while (Stats.right === oldLeft || Stats.right === oldRight || Stats.right === oldMiddle || Stats.left === Stats.right || Stats.right === Stats.middle )
     do {
         Stats.middle = randomImage();   
-    } while (Stats.middle === oldLeft || Stats.middle === oldRight || Stats.middle === oldMiddle)
+    } while (Stats.middle === oldLeft || Stats.middle === oldRight || Stats.middle === oldMiddle || Stats.middle === Stats.right || Stats.left === Stats.middle)
     
 }
 
